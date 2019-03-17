@@ -1,0 +1,6 @@
+﻿  stdafx.cpp
+  HW5.cpp
+c:\users\max\desktop\programming\comp-sci\1430\hw5\hw5\hw5.cpp(32): error C2065: 'cout': undeclared identifier
+c:\users\max\desktop\programming\comp-sci\1430\hw5\hw5\hw5.cpp(32): error C2248: 'DynamicArray::arraySize': cannot access private member declared in class 'DynamicArray'
+  c:\users\max\desktop\programming\comp-sci\1430\hw5\hw5\hw5.cpp(13): note: see declaration of 'DynamicArray::arraySize'
+  c:\users\max\desktop\programming\comp-sci\1430\hw5\hw5\hw5.cpp(6): note: see declaration of 'DynamicArray'
