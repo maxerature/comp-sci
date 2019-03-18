@@ -1,5 +1,8 @@
-#ifndef Graph_H
-#define Graph_H
+#ifndef DynamicArray_H
+#define DynamicArray_H
+
+#include <string>
+using namespace std;
 
 class DynamicArray {
 	public:
