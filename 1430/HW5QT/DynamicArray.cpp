@@ -10,7 +10,7 @@ using namespace std;
 //Constructors
 DynamicArray::DynamicArray() {
     arraySize = 1;
-    arr = new int[arraySize] {NULL};
+    arr = new int[arraySize] {};
 }
 
 DynamicArray::DynamicArray(int arrSize) {
@@ -21,7 +21,7 @@ DynamicArray::DynamicArray(int arrSize) {
         arraySize = arrSize;
     }
 
-    arr = new int[arraySize] {NULL};
+    arr = new int[arraySize] {};
 }
 
 DynamicArray::DynamicArray(const DynamicArray &a) {
@@ -34,10 +34,6 @@ DynamicArray::DynamicArray(const DynamicArray &a) {
 DynamicArray& DynamicArray::operator=(const DynamicArray& rhs) {
     DynamicArray newboii;
     newboii = DynamicArray(rhs);
-    //arr = new int;
-    //*arr = *(rhs.arr);
-    //arraySize = rhs.arraySize;
-    //numOfElements = rhs.numOfElements;
     return newboii;
 }
 
@@ -136,8 +132,3 @@ void DynamicArray::deleteElement(int num) {
 DynamicArray::~DynamicArray() {
     delete arr;
 }
-
-
-
-
-//int getArraySize()
