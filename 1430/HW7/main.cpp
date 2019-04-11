@@ -1,3 +1,11 @@
+#include "converteru_a.h"
+#include "ConverterU_B.h"
+#include "ConverterU_C.h"
+#include "ConverterU_D.h"
+#include "ConverterU_E.h"
+#include "ConverterU_F.h"
+#include "ConverterU_G.h"
+
 #include <iostream>
 #include <string>
 #include <sstream>
@@ -15,6 +23,8 @@ int main() {
 	ConverterU_G u2g;
 	
 	Converter* converters[] = { &u2a, &u2b, &u2c, &u2d, &u2e, &u2f, &u2g };
+
+    cout << converters[0]->GetExchangeRate("U", "A");
 	// You are required to use the array converters to complete this homework. 
 	// Please DO NOT directly use variables u2a, u2b, u2c, u2d, u2e, u2f, or u2g.
 	

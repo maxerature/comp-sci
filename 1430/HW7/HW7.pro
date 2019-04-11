@@ -7,19 +7,14 @@ SOURCES += \
         main.cpp \
     converter.cpp \
     converteru_a.cpp \
-    converter.cpp \
-    converteru_a.cpp \
     ConverterU_B.cpp \
     ConverterU_C.cpp \
     ConverterU_D.cpp \
     ConverterU_E.cpp \
     ConverterU_F.cpp \
-    ConverterU_G.cpp \
-    main.cpp
+    ConverterU_G.cpp
 
 HEADERS += \
-    converter.h \
-    converteru_a.h \
     converter.h \
     converteru_a.h \
     ConverterU_B.h \
