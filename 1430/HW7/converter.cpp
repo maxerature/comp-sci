@@ -10,5 +10,15 @@ double Converter::GetExchangeRate() {
 }
 
 void Converter::SetExchangeRate(string newRate) {
-    //exchange_rate = newRate;
+
+    for(int i=0; i<newRate.length(); i++) {
+        if (!isdigit(newRate[i]) && (newRate[i] != '.')) {
+            newRate[i] = ' ';
+        }
+    }
+
+    istringstream istr(newRate);
+    double baseRate, comparedRate;
+    istr >> baseRate;
+    istr >> comparedRate;
 }
