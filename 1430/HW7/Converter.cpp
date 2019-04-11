@@ -1,4 +1,4 @@
-#include "converter.h"
+#include "Converter.h"
 
 
 Converter::Converter() {
@@ -11,14 +11,16 @@ double Converter::GetExchangeRate() {
 
 void Converter::SetExchangeRate(string newRate) {
 
-    for(int i=0; i<newRate.length(); i++) {
+    for(unsigned int i=0; i<newRate.length(); i++) {
         if (!isdigit(newRate[i]) && (newRate[i] != '.')) {
             newRate[i] = ' ';
         }
     }
 
-    istringstream istr(newRate);
+    stringstream istr(newRate);
     double baseRate, comparedRate;
     istr >> baseRate;
     istr >> comparedRate;
+
+    exchange_rate = comparedRate/baseRate;
 }
