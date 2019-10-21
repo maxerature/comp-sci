@@ -3,7 +3,6 @@ CONFIG += console c++11
 CONFIG -= app_bundle
 CONFIG -= qt
 
-SOURCES += main.cpp
-
-HEADERS += \
-    ArgumentManager.h
+SOURCES += main.cpp \
+    llstack.cpp \
+    ascack.cpp
